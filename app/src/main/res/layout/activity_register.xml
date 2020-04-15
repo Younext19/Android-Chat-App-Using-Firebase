@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/register_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/logo"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            />
+
+        <EditText
+            android:id="@+id/register_mail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/register_img"
+            android:hint=" Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:padding="13dp"
+            android:background="@drawable/inputs"
+            android:layout_margin="20dp"
+            android:drawableStart="@drawable/mail"
+            />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/register_mail"
+            android:hint=" Enter Your Password"
+
+            android:inputType="textPassword"
+            android:padding="13dp"
+            android:background="@drawable/inputs"
+            android:layout_margin="20dp"
+            android:drawableStart="@drawable/key"
+            />
+        <CheckBox
+            android:id="@+id/Password_Checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_password"
+            android:text="Show Password"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/register_final"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Password_Checkbox"
+            android:text="Create Account"
+            android:background="@drawable/buttons"
+            android:drawableStart="@drawable/send"
+            android:padding="13dp"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/haveit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Have An Account ?"
+            android:layout_below="@id/register_final"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="1dp"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</RelativeLayout>
